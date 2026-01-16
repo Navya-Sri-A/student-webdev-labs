@@ -8,8 +8,34 @@
   </head>
   <body>
     <main>
-      <form action="/submit">
-        <!-- Add your code here -->
+      <h1>Form</h1>    
+        <form action="/submit">
+          <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" placeholder="Full Name">
+          </div>
+          <div>
+              <label for="email">Email:</label>
+              <input type="text" id="email" placeholder="name@pdx.edu">
+          </div><br><br>
+            <fieldset>
+                <legend>Favorite Character : </legend>
+                <input type="radio" name="check" id="text">
+                <label for="text">Spongebob</label>
+                <input type="radio" name="check" id="text">
+                <label for="text">Sandy</label>
+                <input type="radio" name="check" id="text">
+                <label for="text">Patrick</label>
+            </fieldset><br><br>
+            <fieldset>
+                <legend>Are you a fan fof the show ?</legend>
+                <input type="checkbox" name="check" id="text">
+                <label for="text">Yes, I have watched all the episodes!</label><br>
+                <input type="checkbox" name="check" id="text">
+                <label for="text">Yes, it's got the best memes.</label><br>
+            </fieldset><br><br>
+            <input type="button" value="Submit">
+            <input type="button" value="Reset">
       </form>
     </main>
   </body>
