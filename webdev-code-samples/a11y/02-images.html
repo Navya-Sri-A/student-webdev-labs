@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility - Images Example</title>
+  </head>
+  <body>
+    <main>
+      <h1>Alternative Text for Images</h1>
+      <figure>
+        <img src="http://placebear.com/200/100" />
+        <figcaption>The image has no 'alt' attribute</figcaption>
+      </figure>
+      <figure>
+        <img src="http://placebear.com/200/100" alt="image.png" />
+        <figcaption>
+          The 'alt' attribute does not describe the image.
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="http://placebear.com/200/100" alt="img47547568.png" />
+        <figcaption>
+          The 'alt' attribute does not describe the image.
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="http://placebear.com/200/100" alt="..." />
+        <figcaption>
+          The 'alt' attribute does not describe the image.
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="http://placebear.com/200/100"
+          alt="placeholder image of a bear from placebear.com" />
+        <figcaption>
+          The image has an 'alt' attribute that describes the image.
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="http://placebear.com/200/100"
+          alt="placeholder image of a bear from placebear.com"
+          width="200"
+          height="100" />
+        <figcaption>
+          Even better! This image has an "alt" attribute that describes the
+          image, as well as "width" and "height" attributes.
+        </figcaption>
+      </figure>
+    </main>
+  </body>
+</html>

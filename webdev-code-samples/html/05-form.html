@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Form Example</title>
+  </head>
+  <body>
+    <main>
+      <form method="post" action="/submitquestion">
+        <h1>Submit a Question</h1>
+        <div>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="username" />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Which class section are you enrolled in?</legend>
+          <input type="radio" id="cs463" name="webdev" value="cs463" />
+          <label for="cs463">CS 463</label>
+          <input type="radio" id="cs563" name="webdev" value="cs563" />
+          <label for="cs563">CS 563</label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>What topics do you have questions about</legend>
+          <input type="checkbox" id="git" name="topics" value="git" />
+          <label for="git">Git</label>
+          <input type="checkbox" id="html" name="topics" value="html" />
+          <label for="html">HTML</label>
+          <input type="checkbox" id="css" name="topics" value="css" />
+          <label for="css">CSS</label>
+          <input
+            type="checkbox"
+            id="bootstrap"
+            name="topics"
+            value="bootstrap" />
+          <label for="bootstrap">Bootstrap</label>
+          <input type="checkbox" id="js" name="topics" value="javascript" />
+          <label for="js">JavaScript</label>
+          <input type="checkbox" id="node" name="topics" value="node" />
+          <label for="node">Node.js</label>
+        </fieldset>
+        <br />
+        <div>
+          <label for="assignments"
+            >What assignment are you currently working on?</label
+          >
+          <select id="assignments">
+            <option value="">Select One:</option>
+            <option value="hw1">HW 1</option>
+            <option value="hw2">HW 2</option>
+            <option value="hw3">HW 3</option>
+            <option value="hw4">HW 4</option>
+            <option value="labs">Lab Notebook</option>
+            <option value="javascript">Final Project</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="question">What is your question?</label>
+          <br />
+          <textarea name="textarea" id="question" rows="4" cols="70"></textarea>
+        </div>
+        <br />
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" />
+        </div>
+        <br />
+        <div>
+          <input type="submit" value="Submit Form" />
+          <input type="reset" value="Reset Form" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

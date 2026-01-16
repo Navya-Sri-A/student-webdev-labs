@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility - Tabindex Example</title>
+    <link rel="stylesheet" href="../_styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Tab Index Example</h1>
+      <fieldset>
+        <legend>
+          Who are your favorite characters in the Stormlight Archive?
+        </legend>
+        <div class="form-control">
+          <input id="kaladin" type="checkbox" name="character" />
+          <label for="kaladin">Kaladin</label>
+        </div>
+        <div class="form-control">
+          <input id="shallan" type="checkbox" name="character" />
+          <label for="shallan">Shallan</label>
+        </div>
+        <div class="form-control">
+          <input id="jasnah" type="checkbox" name="character" />
+          <label for="jasnah">Jasnah</label>
+        </div>
+        <!-- adding the div and label to the tabindex -->
+        <div tabindex="0" class="form-control">
+          <input id="dalinar" type="checkbox" name="character" />
+          <label tabindex="0" for="dalinar">Dalinar</label>
+        </div>
+        <!-- adding the div and label to the tabindex -->
+        <div tabindex="0" class="form-control">
+          <input id="szeth" type="checkbox" name="character" />
+          <label tabindex="0" for="szeth">Szeth</label>
+        </div>
+        <!-- adding the div and label to the tabindex -->
+        <div class="form-control">
+          <input id="adolin" type="checkbox" name="character" />
+          <label tabindex="0" for="adolin">Adolin</label>
+        </div>
+      </fieldset>
+    </main>
+  </body>
+</html>
