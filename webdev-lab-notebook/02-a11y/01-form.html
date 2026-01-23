@@ -6,33 +6,37 @@
     <title>01 - Form</title>
   </head>
   <body>
-    <h1>Updated Form</h1>
-    <form action="/submit">
-    <div>
-      <label for="name">Name</label>
-      <input type="text" id="name"/>
-    </div>
-    <br>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" id="email"/>
-    </div>
-    <br>
-    <legend>Favorite Character</legend>
-      <div>
-        <input type="radio" name="character" id="spongebob" />
-        <label for="spongebob">Spongebob</label>
-      </div>
-      <div>
-        <input type="radio" name="character" id="patrick" />
-        <label for="patrick">Patrick</label>
-      </div>
-      <div>
-        <input type="radio" name="character" id="sandy" />
-        <label for="sandy">Sandy</label>
-      </div>
-    <br>
-      <button>Submit</button>
-    </form>
+    <main>
+      <h1>Updated Form</h1>
+      <form action="/submit">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Favorite Character</legend>
+          <div>
+            <input type="radio" name="character" id="spongebob" />
+            <label for="spongebob">Spongebob</label>
+          </div>
+          <div>
+            <input type="radio" name="character" id="patrick" />
+            <label for="patrick">Patrick</label>
+          </div>
+          <div>
+            <input type="radio" name="character" id="sandy" />
+            <label for="sandy">Sandy</label>
+          </div>
+          <br />
+        </fieldset>
+        <button>Submit</button>
+      </form>
+    </main>
   </body>
 </html>
